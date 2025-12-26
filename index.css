@@ -38,17 +38,6 @@ h2{
     text-align: center;
 }
 
-.logoImg{
-    width: 75vw;
-    height: auto;
-}
-
-.indexImage{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-
 h3{
     text-decoration: underline;
     text-decoration-thickness:3px;
