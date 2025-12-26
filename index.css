@@ -45,18 +45,6 @@ h3{
     margin: 3px;
 }
 
-.infoBlockLeft{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 100%;
-}
-
-.infoBlockRight{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-}
-
 .indexBlock{
     width: 100%;
     margin: 10px 0 10px 0;
@@ -64,13 +52,6 @@ h3{
 
 a{
     display: block;
-}
-
-#infoBlock, .indexBlock{
-    background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(6px);
-    border-bottom: solid black 1px;
-    border-top: solid black 1px;
 }
 
 .titleBlock{
