@@ -134,7 +134,7 @@ a{
 }
 
 .headerTitle{
-    font-size: clamp(2rem, 40px, 4rem);
+    font-size: clamp(1.5rem, 30px, 3rem);
 }
 
 h2{
