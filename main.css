@@ -1,0 +1,211 @@
+header{
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid black 5px;
+    color: rgba(246, 241, 233);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(36, 41, 36, 1), #342f3d);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header a{
+    font-size: 8vw;
+    display: inline-block;
+    text-align: center;
+    color: #f6f1e9;
+    padding: 0;
+    margin: 0;
+}
+
+header a:hover{
+    filter: invert(1);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.6);
+}
+
+header h1{
+    text-decoration: underline;
+    margin: 0;
+}
+
+.hamburger{
+    font-size: 5vw;
+    cursor: pointer;
+    display: none;
+    z-index: 200;
+    position: relative;
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    padding: 0;
+    justify-content: right;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#mobileMenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobileMenu li{
+    margin: 10vw;
+}
+
+#mobileMenu a{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    header nav.desktop{
+        display: none;
+    }
+}
+
+.headerTitle{
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    font-family: "Texturina", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: #c9c5bb;
+    background-color: #0f1411;
+}
+
+.pageTitle{
+    font-size: 15vw;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    text-shadow: 3px 3px 5px gray;
+}
+
+.latinName{
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 0 10px 0 10px;
+}
+
+.infoCat{
+    margin: 0 10px 0 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-size: 5vw;
+}
+.mushroomInfo{
+    padding: 5px;
+    border-bottom: solid black 5px;
+}
+
+th{
+    border: solid black 3px;
+    background: #e9e9e9;
+    font-size: 2.5vw;
+}
+
+table{
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #f6f0ff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e9e9e9;
+}
+
+td{
+    border: solid black 1px;
+    font-size: 3vw;
+}
+
+.infoCat{
+    font-size: 5vw;
+    margin: 5px 0 0 0;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+h1{
+    font-size: 8vw;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2{
+    font-size: 6vw;
+}
+
+p{
+    margin: 5px;
+    font-size: 4vw;
+}
+
+.secHeader{
+    text-decoration: underline;
+    font-size: 8vw;
+    margin: 2vw;
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+}
+
+#submenuMushrooms:checked ~ .submenu,
+#submenuLogs:checked ~ .submenu,
+#submenuBundles:checked ~ .submenu {
+    max-height: 500px;
+}
+
+li a {
+    font-size: 5vw;
+}
