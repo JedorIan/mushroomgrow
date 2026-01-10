@@ -126,7 +126,7 @@ body{
     text-decoration-thickness: 3px;
 }
 
-a{
+header a{
     text-decoration: none;
     font-weight: bold;
     color: inherit;
