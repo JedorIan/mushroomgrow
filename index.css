@@ -52,6 +52,7 @@ h3{
 
 a{
     display: block;
+    color: inherit;
 }
 
 .titleBlock{
