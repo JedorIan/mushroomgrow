@@ -48,6 +48,7 @@ header h1{
     display: none;
     z-index: 200;
     position: relative;
+    margin: 0;
 }
 
 .mobile-menu{
