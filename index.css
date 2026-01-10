@@ -48,6 +48,9 @@ h3{
 .indexBlock{
     width: 100%;
     margin: 10px 0 10px 0;
+}
+
+.linkBox{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
